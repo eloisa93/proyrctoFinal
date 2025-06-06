@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilo con Flores Eloy</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Dilo con Flores Eloy</h1>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="productos">
+        <h2>Productos</h2>
+        <div class="productos-grid">
+            <div class="producto" onclick="agregarCarrito('Producto 1')">
+                <img src="img/flore1.jpg" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p>$10.00</p>
+            </div>
+            <div class="producto" onclick="agregarCarrito('Producto 2')">
+                <img src="img/flore4.jpg" alt="Producto 2">
+                <h3>Producto 2</h3>
+                <p>$15.00</p>
+            </div>
+            <div class="producto" onclick="agregarCarrito('Producto 3')">
+                <img src="img/flore5.jpg" alt="Producto 3">
+                <h3>Producto 3</h3>
+                <p>$20.00</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="formularioContacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mi Tienda. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
